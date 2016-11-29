@@ -5,18 +5,21 @@ import {HttpModule, JSONP_PROVIDERS} from '@angular/http';
 
 import {AppComponent} from './app.component';
 import {FridgeFindComponent} from './fridge-find/fridge-find.component'
+import {WeatherComponent} from './weather/weather.component'
 
-import { RouterModule, Routes } from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 
-const appRoutes: Routes = [
-  { path: 'fridge_find', component: FridgeFindComponent },
-  { path: '', component: AppComponent },
+const appRoutes:Routes = [
+    {path: 'fridge-find', component: FridgeFindComponent},
+    {path: 'weather', component: WeatherComponent},
+    {path: '', component: AppComponent},
 ];
 
 @NgModule({
     declarations: [
         AppComponent,
-        FridgeFindComponent
+        FridgeFindComponent,
+        WeatherComponent
     ],
     imports: [
         BrowserModule,

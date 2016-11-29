@@ -27,12 +27,16 @@
                 </div>
                 <div class="col-xs-12" id="navigation" style="position: absolute; bottom: -45px;">
                     <div class="row">
-                        <div class="col-xs-1 col-xs-offset-4">
-                            <img src="/static/images/fridge-icon.png" alt="" style="width: 100%;">
-                        </div>
-                        <div class="col-xs-1">
-                            <img src="/static/images/weather-nav.png" style="width: 100%; padding-top: 15px;">
-                        </div>
+                        <a routerLink="/fridge-find" routerLinkActive="active">
+                            <div class="col-xs-1 col-xs-offset-4">
+                                <img src="/static/images/fridge-icon.png" alt="" style="width: 100%;">
+                            </div>
+                        </a>
+                        <a routerLink="/weather" routerLinkActive="active">
+                            <div class="col-xs-1">
+                                <img src="/static/images/weather-nav.png" style="width: 100%; padding-top: 15px;">
+                            </div>
+                        </a>
                         <div class="col-xs-1">
                             <img src="/static/images/ngWeather-house.png" style="width: 100%; padding-bottom: 10px;">
                         </div>
@@ -47,55 +51,5 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <router-outlet></router-outlet>
-        <div style="margin-top: 80px;">
-            <div style="margin-left: 70px; margin-right: 70px; display: inline-block; width: 14%; height: 300px; background-color: gray; position: relative;">
-                <i class="wi wi-night-sleet"
-                   style="margin-left: 50%; transform: translate(-50%); padding-top: 20px; top: 0px; font-size: 80px;"></i>
-                <p style="padding-top: 20px; text-align: center; font-size: 32px; font-weight: bold;">47&deg;F</p>
-                <i class="wi wi-wind-beaufort-11"
-                   style="font-size: 42px; margin-left: 50%; transform: translate(-50%);"></i>
-                <i class="wi wi-humidity"
-                   style="display: block; margin-left: 50%; transform: translate(-50%); text-align: center;"></i>
-            </div>
-            <div style="margin-right: 70px; position: relative; display: inline-block; width: 14%; height: 300px; background-color: gray;">
-                <i class="wi wi-day-cloudy"
-                   style="margin-left: 50%; transform: translate(-50%); padding-top: 20px; top: 0px; font-size: 80px;"></i>
-                <p style="margin-right: 10px; padding-top: 20px; text-align: center; font-size: 32px; font-weight: bold;">
-                    47&deg;F</p>
-                <i class="wi wi-wind-beaufort-6"
-                   style="font-size: 42px; margin-left: 50%; transform: translate(-50%);"></i>
-                <i class="wi wi-humidity"
-                   style="display: block; margin-left: 50%; transform: translate(-50%); text-align: center;"></i>
-            </div>
-            <div style="margin-right: 70px; position: relative; display: inline-block; width: 14%; height: 300px; background-color: gray;">
-                <i class="wi wi-day-windy"
-                   style="margin-left: 50%; transform: translate(-50%); padding-top: 20px; top: 0px; font-size: 80px;"></i>
-                <p style="padding-top: 20px; text-align: center; font-size: 32px; font-weight: bold;">47&deg;F</p>
-                <i class="wi wi-wind-beaufort-0"
-                   style="font-size: 42px; margin-left: 50%; transform: translate(-50%);"></i>
-                <i class="wi wi-humidity"
-                   style="display: block; margin-left: 50%; transform: translate(-50%); text-align: center;"></i>
-            </div>
-            <div style="margin-right: 70px; position: relative; display: inline-block; width: 14%; height: 300px; background-color: gray;">
-                <i class="wi wi-stars"
-                   style="margin-left: 50%; transform: translate(-50%); padding-top: 20px; top: 0px; font-size: 80px;"></i>
-                <p style="padding-top: 20px; text-align: center; font-size: 32px; font-weight: bold;">47&deg;F</p>
-                <i class="wi wi-wind-beaufort-2"
-                   style="font-size: 42px; margin-left: 50%; transform: translate(-50%);"></i>
-                <i class="wi wi-humidity"
-                   style="display: block; margin-left: 50%; transform: translate(-50%); text-align: center;"></i>
-            </div>
-            <div style="margin-right: 50px; position: relative; display: inline-block; width: 14%; height: 300px; background-color: gray;">
-                <i class="wi wi-day-lightning"
-                   style="margin-left: 50%; transform: translate(-50%); padding-top: 20px; top: 0px; font-size: 80px;"></i>
-                <p style="padding-top: 20px; font-size: 32px; font-weight: bold; text-align: center;">47&deg;F</p>
-                <i class="wi wi-wind-beaufort-9"
-                   style="font-size: 42px; margin-left: 50%; transform: translate(-50%);"></i>
-                <i class="wi wi-humidity"
-                   style="display: block; margin-left: 50%; transform: translate(-50%); text-align: center;"></i>
-            </div>
-        </div>
-    </div>
+    <router-outlet></router-outlet>
 </div>
